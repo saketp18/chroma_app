@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="gridItemPadding">3dp</dimen>
+    <dimen name="gridViewHeight">315dp</dimen>
+    <dimen name="heightfor2">151.5dp</dimen>
+    <dimen name="heightfor3">99dp</dimen>
+    <dimen name="heightfor4">72.5dp</dimen>
+    <dimen name="heightfor5">57dp</dimen>
+    <dimen name="heightfor6">46.5dp</dimen>
+	<dimen name="heightfor7">36dp</dimen>
+	<dimen name="heightfor8">28.5dp</dimen>
+	<dimen name="heightfor9">20dp</dimen>
+	<dimen name="heightfor10">18.5dp</dimen>
+	<dimen name="dialogbuttonwidth">120dp</dimen>
+	<!-- Always make use of this base values for padding  
+	Oiginal Values
+	<dimen name="heightfor2">315dp</dimen>
+    <dimen name="heightfor3">210dp</dimen>
+    <dimen name="heightfor4">157.5dp</dimen>
+    <dimen name="heightfor5">126dp</dimen>
+    <dimen name="heightfor6">10dp</dimen>
+	<dimen name="heightfor7">90dp</dimen>
+	<dimen name="heightfor8">78.70dp</dimen>
+	<dimen name="heightfor9">70dp</dimen>
+	<dimen name="heightfor10">63dp</dimen>
+	 -->
+</resources>

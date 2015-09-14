@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context="com.example.paletton.GameScreenActivity" >
+
+
+    <Button
+        android:id="@+id/rate_button"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_state"
+        android:textSize="30dp"
+        android:text="@string/rate" />
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/rate_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_state"
+        android:textSize="30dp"
+        android:text="@string/play" />
+
+    <Button
+        android:id="@+id/rank_button"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rate_button"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_state"
+        android:textSize="30dp"
+        android:text="@string/ranking" />
+
+    
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/play_button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:text="CHORMA"
+        android:textColor="@android:color/white"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/helpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="105dp"
+        android:text="@string/info"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+</RelativeLayout>

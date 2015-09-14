@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa" >
+
+    <TextView
+        android:id="@+id/gameOver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Game Over"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameOver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="@string/scoreText"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameOver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@id/scoreText"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/highscoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="@string/highScore"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/score"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@id/highscoreText"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="@dimen/dialogbuttonwidth"
+        android:layout_height="60dp"
+        android:layout_below="@id/highscore"
+        android:layout_alignParentRight="true"
+		android:layout_marginRight="10dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_state"
+        android:text="@string/play_agin"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="@dimen/dialogbuttonwidth"
+        android:layout_height="60dp"
+        android:layout_below="@id/highscore"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="10dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_state"
+        android:text="@string/share"
+        android:textSize="20sp" />
+
+</RelativeLayout>

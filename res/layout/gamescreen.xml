@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background" >
+
+     <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp" >
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/scoreText"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/currScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/scoreText"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/currTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="53dp"
+            android:layout_toLeftOf="@id/currTime"
+            android:text="@string/timeText"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+    </RelativeLayout>
+    
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="@dimen/gridViewHeight"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/topLayout"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:numColumns="2" />
+<!-- 
+    <ImageView
+        android:id="@+id/gridviewImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/grid_background"
+        android:visibility="gone" /> -->
+
+   
+    <Button
+        android:id="@+id/pause_button"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/gridview"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_state"
+        android:text="@string/pause"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/resume_button"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/gridview"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_state"
+        android:text="@string/resume"
+        android:textSize="30dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

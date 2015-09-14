@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chroma</string>
+    <string name="play">재생</string>
+	<string name="rate">검토</string>
+	<string name="info">다른 색상으로 박스를 눌러주세요</string>
+	<string name="scoreText">점수 :</string>
+	<string name="timeText">시간 :</string>
+	<string name="pause">일시 정지</string>
+	<string name="resume">이력서</string>
+	<string name="play_agin">재생</string>
+	<string name="share">공유</string>
+	<string name="highScore">높은 점수 ::</string>
+	<string name="ranking">계급</string>
+    <string name="app_name1">Hellp</string>
+
+</resources>

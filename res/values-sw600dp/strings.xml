@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chroma</string>
+    <string name="play">PLAY</string>
+	<string name="rate">RATE US</string>
+	<string name="info">Tap the box with different Color!!</string>
+	<string name="scoreText">SCORE:</string>
+	<string name="timeText">TIME:</string>
+	<string name="pause">PAUSE</string>
+	<string name="resume">RESUME</string>
+	<string name="play_agin">PLAY AGAIN</string>
+	<string name="share">SHARE</string>
+	<string name="highScore">HIGH SCORE:</string>
+	<string name="ranking">RANKING</string>
+</resources>
