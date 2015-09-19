@@ -15,15 +15,13 @@ import com.sec.android.chroma.R;
 
 public class CustomGridAdapter extends BaseAdapter{
 	  private Context mContext;
-	  private final ArrayList<String> web;
 	  private int counter;
 	  private int generatedcolor;
 	  private int generatedLightcolor;
 	  private int randomNumber;
 
-	  public CustomGridAdapter(Context c, ArrayList<String> web ) {
+	  public CustomGridAdapter(Context c) {
 	        mContext = c;
-	        this.web = web;
 	    }
 	    
 	    public int setCounterLayout(int counter){
@@ -47,7 +45,7 @@ public class CustomGridAdapter extends BaseAdapter{
 
 	    @Override
 		public int getCount() {
-			return web.size();
+			return 0;
 		}
 
 		@Override
