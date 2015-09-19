@@ -99,8 +99,7 @@ public class MainGameActivity extends Activity {
 		currTimerText = (TextView)findViewById(R.id.currTime);
 		pauseButton = (Button)findViewById(R.id.pause_button);
 		resumeButton= (Button)findViewById(R.id.resume_button);
-		list.add("0");list.add("1");list.add("2");list.add("3");
-		adapter = new CustomGridAdapter(MainGameActivity.this, list);
+		adapter = new CustomGridAdapter(MainGameActivity.this);
 		random = new Random();
 	    randomNumber = random.nextInt(4);
 		adapter.getRandomNumber(randomNumber);
@@ -170,8 +169,6 @@ public class MainGameActivity extends Activity {
 					e.printStackTrace();
 				}
 				GamescreenActivity.getInstance().onAdd(new_highScore);
-				list.clear();
-				list.add("1");list.add("2");list.add("3");list.add("4");
 				counter = 55;
 				grid.setNumColumns(2);
 				adapter.setCounterLayout(counter);
@@ -226,100 +223,60 @@ public class MainGameActivity extends Activity {
 				int blue = (int) (Math.random() * 236)+20;
 				switch (counter) {
 				case 0:
-					list.clear();
-					for (int i = 0; i < 4; i++) {
-						list.add("" + i);
-					}
 					randomNumber = random.nextInt(4);
 					adapter.getRandomNumber(randomNumber);
 					generatedColorLight = Color.argb(100, red, green, blue);
 					grid.setNumColumns(2);
 					break;
 				case 1:
-					list.clear();
-					for (int i = 0; i < 9; i++) {
-						list.add("" + i);
-					}
 					randomNumber = random.nextInt(9);
 					adapter.getRandomNumber(randomNumber);
 					grid.setNumColumns(3);
 					generatedColorLight = Color.argb(150, red, green, blue);
 					break;
 				case 2:	case 3:
-					list.clear();
-					for (int i = 0; i < 16; i++) {
-						list.add("" + i);
-					}
 					randomNumber = random.nextInt(16);
 					adapter.getRandomNumber(randomNumber);
 					generatedColorLight = Color.argb(170, red, green, blue);
 					grid.setNumColumns(4);
 					break;
 				case 4:	case 5:	case 6:	case 7:	case 8:
-					list.clear();
-					for (int i = 0; i < 25; i++) {
-						list.add("" + i);
-					}
 					randomNumber = random.nextInt(25);
 					adapter.getRandomNumber(randomNumber);
 					generatedColorLight = Color.argb(190, red, green, blue);
 					grid.setNumColumns(5);
 					break;
 				case 9:	case 10:case 11:case 12:case 13:
-					list.clear();
-					for (int i = 0; i < 36; i++) {
-						list.add("" + i);
-					}
 					randomNumber = random.nextInt(36);
 					adapter.getRandomNumber(randomNumber);
 					generatedColorLight = Color.argb(195, red, green, blue);
 					grid.setNumColumns(6);
 					break;
 				case 14:case 15:case 16:case 17:case 18:case 19:case 20:case 21:case 22:case 23:
-					list.clear();
-					for (int i = 0; i < 49; i++) {
-						list.add("" + i);
-					}
 					randomNumber = random.nextInt(49);
 					adapter.getRandomNumber(randomNumber);
 					generatedColorLight = Color.argb(200, red, green, blue);
 					grid.setNumColumns(7);
 					break;
 				case 24:case 25:case 26:case 27:case 28:case 29:case 30:case 31:case 32:case 33:case 34:case 35:case 36:case 37:case 38:case 39:case 40:case 41:case 42:
-					list.clear();
-					for (int i = 0; i < 64; i++) {
-						list.add("" + i);
-					}
 					randomNumber = random.nextInt(64);
 					adapter.getRandomNumber(randomNumber);
 					generatedColorLight = Color.argb(215, red, green, blue);
 					grid.setNumColumns(8);
 					break;
 				case 43:case 44:case 45:case 46:case 47:case 48:case 49:case 50:case 51:case 52:
-					list.clear();
-					for (int i = 0; i < 81; i++) {
-						list.add("" + i);
-					}
 					randomNumber = random.nextInt(81);
 					adapter.getRandomNumber(randomNumber);
 					generatedColorLight = Color.argb(230, red, green, blue);
 					grid.setNumColumns(9);
 					break;
 				case 53:case 54:
-					list.clear();
-					for (int i = 0; i < 100; i++) {
-						list.add("" + i);
-					}
 					randomNumber = random.nextInt(100);
 					adapter.getRandomNumber(randomNumber);
 					generatedColorLight = Color.argb(250, red, green, blue);
 					grid.setNumColumns(10);
 					break;
 				case 55:
-					list.clear();
-					for (int i = 0; i < 4; i++) {
-						list.add("" + i);
-					}
 					randomNumber = random.nextInt(4);
 					adapter.getRandomNumber(randomNumber);
 					grid.setNumColumns(2);
@@ -393,8 +350,6 @@ public class MainGameActivity extends Activity {
 					resumeButton.setVisibility(View.GONE);
 					new_highScore = 0;
 					counter = 0;
-					list.clear();
-					list.add("1");list.add("2");list.add("3");list.add("4");
 					randomNumber = random.nextInt(4);
 					currScoreText.setText(""+new_highScore);
 					adapter.getGeneratedColor(generateColor());
